@@ -5,15 +5,13 @@ Created on Mon Apr 19 21:50:30 2021
 @author: gupta
 """
 
+import pickle
+
+import numpy as np
+from flask import Flask
 # Importing essential libraries
 from pywebio.input import *
-from pywebio.output import *
-from flask import Flask, request
 from pywebio.platform.flask import webio_view
-from pywebio import STATIC_PATH
-
-import pickle
-import numpy as np
 
 # Load the Random Forest CLassifier model
 filename = 'first-innings-score-rf-model.pkl'
